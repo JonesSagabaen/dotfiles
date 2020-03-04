@@ -1,0 +1,7 @@
+Node Debugger
+=================================================================================
+Run debugger on file					> node inspect <filename>
+Help							help
+Resume debugger execution				continue
+REPL to inspect variables				repl
+Print entire object values				console.log(<variable>)

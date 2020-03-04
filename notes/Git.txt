@@ -1,0 +1,25 @@
+Git
+
+Ignoring Local Changes
+================================================================================
+.gitignore file is used to ignore files from being saved to the repository.  If a config file is being changed locally
+and it's desired to have the file ignored that changes are being done to the project, then use `--skip-worktree` tag.
+
+$ git update-index --skip-worktree <config_file_to_ignore>
+
+See all files in this list:
+
+$ git ls-files -v|grep '^S'
+
+Resolving Merge Conflicts
+=================================================================================
+Remove skip tag and reset file:
+
+$ git fetch
+$ git update-index --no-skip-worktree <config_file_to_not_ignore>
+$ git reset --hard
+
+Merge `master` to working branch.  Make sure that you're it the working branch.
+
+$ git merge origin/master
+

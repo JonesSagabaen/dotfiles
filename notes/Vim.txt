@@ -1,0 +1,144 @@
+NeoVim
+
+Refresh file						:e
+Show filepath                           		Ctrl+g
+
+Navigation
+=================================================================================
+Word forward		    				w
+Word backward		    				b
+Word end		        			e
+End of line			        		$
+Start of line			    			0
+Start of first character in line			Shift+i
+Start of last character in line				Shift+a
+
+Move to the start of file				gg
+Move to end of file				    	G
+
+Insert new line and edit				o
+Insert at the beginning of line				Shift+i
+Insert at the end of the line				Shift+a
+Delete to the end of the line				Shift+d
+Delete to the beginning of the line			Shift+c
+
+Relative down lines				    	<number>j
+Relative up lines				    	<number>k
+Move entire line					:move <relative row number>
+
+Jump matching brace                     		%
+
+Half page down			    			Ctrl+d
+Half page up			    			Ctrl+u
+Page down (Forward)		    			Ctrl+f
+Page up	(Back)			    			Ctrl+b
+Scroll where cursor is at the middle			zz
+Scroll where cursor is at the top			zt
+Scroll where cursor is at the bottom			zb
+
+Scroll cursor down			        	Ctrl+y
+Scroll cursor up			        	Ctrl+e
+
+Go to character (in current line)		    	f<character>
+Go to character backward				F<character>
+Go before character					t<character>
+Go before character backward				T<character>
+Repeat goto action					;
+
+Increment the first number in line			Ctrl+a
+Decrement the first number in line			Ctrl+x
+
+Go to previous location					Ctrl+o
+Go to forward location					Ctrl+i
+
+Go to method definition					gd
+Go back to previous file				Ctrl+o
+Show documentation					Shift+k
+
+Open NERDTree						Ctrl+n
+Switch between NERDTree					Ctrl+w w
+Open with Fuzzy File Finding (fzf)			Ctrl+p
+
+Folds
+=================================================================================
+Expand							zo
+Collapse						zc
+
+In diff, previous change				[c
+In diff, next change					]c
+
+Window Split
+=================================================================================
+Open files side-by-side					(In command line) nvim -O file1 file2
+Open files with diff					(In command line) nvim -d file1 file2
+Diff side-by-side windows				:windo difft
+
+Split window vertically					Ctrl+w v
+Split window horizontally				Ctrl+w s
+
+Switch pane down					Ctrl+w j
+Switch pane up						Ctrl+w k 
+Switch pane left					Ctrl+w h
+Switch pane right					Ctrl+w l
+
+Resize height						<number> Ctrl+w - or <number> Ctrl+w +
+Resise width						<number Ctrl+w < or <number> Ctrl+w >
+Swap panes						Ctrl+w Ctrl+r
+
+Copy/Paste
+=================================================================================
+Start selection					    	v
+Start selection with whole line				Shift+v
+Select entire line				    	V
+Cut							d
+Copy							y
+Paste							p
+
+Paste over word						vep
+
+Select inside tag					vi<tag>
+Select at tag						va<tag>
+Select next outter tag					va<tag> a<tag> a<tag>...
+
+Undo	        					u
+Redo		        				Ctrl+r
+
+Deletion
+=================================================================================
+Delete word end						de
+Delete word backword					db
+
+Delete (but don't copy) word				"_dw
+Delete number of words					<number>dw
+Delete everything forward				dG
+Delete up to character in line				df<character>
+
+Delete newline						J
+
+Change
+=================================================================================
+Change inside (inside tags)				ci<character>
+Change word						cw
+
+Search
+=================================================================================
+Search pattern						/<pattern>
+Next occurrence						n
+Previous occurence					N
+
+Buffers
+=================================================================================
+List all buffered files                 		:ls
+Switch to previous buffer               		:bp
+                                        		Ctrl+6
+Switch to next buffer               			:bn
+Switch to buffer number                 		:b<number>
+Open another file                       		:Explore
+
+Recording
+=================================================================================
+Set a save slot and start				q<key>
+Replay save						@<key>
+
+Command history						q:
+Repeat commands (up until Esc key)			.

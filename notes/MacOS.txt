@@ -1,0 +1,11 @@
+Mac Hotkey
+=================================================================================
+MacBook brightness down			Ctrl+F1
+MacBook brightness up			Ctrl+F2
+
+Page down				Fn+Down
+Page up					Fn+Up
+
+Chrome Hotkey
+=================================================================================
+Duplicate tab				Cmd+k, Cmd+Enter

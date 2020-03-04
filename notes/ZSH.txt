@@ -1,0 +1,80 @@
+Command Line
+
+Bash Navigation
+=================================================================================
+Move word forward		                Option+Left
+Move word backward		                Option+Right
+Move to start			                Ctrl+A
+Move to end			                Ctrl+E
+
+Delete to start			                Ctrl+U
+Delete to end			                Ctrl+K
+Delete word backward		            	Ctrl+W
+
+Previous directory		                $ cd -
+Directory history		                $ cd -<tab>
+
+Vim Navigation
+=================================================================================
+Escape Insert mode				jj
+Previous command				In Normal mode, k
+Next command					In Normal mode, j
+
+List
+=================================================================================
+List				                $ ls
+List with details		                $ ll
+List all			                $ la
+
+Search
+=================================================================================
+$ ack <parameters> <search patter> <file or directory>
+Search all occurrences within files starting from the current working directory.
+
+Example:
+$ ack -f | ack -i filename_to_look_for
+Recursively search through filenames and locate pattern while ignoring case
+
+$ ack --help | ack -i ignore
+Print help documents and search for occurrences of the word "ignore"
+
+Used commands search		            	Ctrl+R
+Cycle next recommendation	            	Ctrl+R
+
+Fuzzy File Finder
+=================================================================================
+$ fzf
+Prompts the Fuzzy File Finder to search for files with matching filenames.
+
+$ vim ** <tab>
+Open a file in Vim but search for file with fzf.
+
+Cursor Up fzf results                   	Ctrl+K
+Cursor Down fzf results                 	Ctrl+J
+
+Commands
+=================================================================================
+$ tree
+Print the tree structure of the current directory
+
+$ which <command>
+Prints the directory of the executable script.
+
+$ <command> --version
+Version of the utility.
+
+$ <command> --help
+Print the manual page associated with the utility.
+
+$ pwd | pbcopy
+Copies the current working directory to the clipboard for pasting to another terminal.
+
+$ history
+View the recent list of commands which then can be recalled with !# (where # is the line number)
+
+$ cat -n <TextFile.txt>
+Print file content with line numbers.
+
+$ less text_file_to_read.txt
+Vim-like view of a text file which enables similar text file navigation.
+

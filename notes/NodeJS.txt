@@ -1,0 +1,28 @@
+NPM (Node Package Manager)
+
+$ node
+Launch Node's REPL
+
+$ npm init
+Read the dependencies in `package.json` and installs packages in Local Mode
+
+$ npm ls
+List installed packages.
+
+$ npm up
+Update all packages.
+
+$ npm t
+Run tests.
+
+$ npm cache clean
+Delete outdated packages.
+
+Executables
+================================================================================
+$ la node_module/.bin
+Print all available executables available for NPM.
+
+$ npx <executable>
+Execute the name of the .bin file.
+
